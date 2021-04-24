@@ -4,6 +4,7 @@ Atividade realizada no Curso de Ciência da Computação.
 
 
 Como jogar: 
+  
   Primeiramente escolha entre colocar uma bandeira (1) ou abrir uma posição da matriz (2);
   Em seguida insira o número da linha da posição na matriz que deseja realizar a ação; 
   E depois insira o número da coluna da posição na matriz que deseja realizar a ação;
