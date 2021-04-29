@@ -121,7 +121,7 @@ inicializa1:
 calculabombas:	
 	beq 	t0, a1, inicializa2	# Realiza a repetição da função em todas os indices da matriz
 	beq	t2, a2, zera		# Quando o contador de colunas da matriz for igual a 8, será zerado para iniciar novamente a contagem das colunas na proxima linha
-	lw  	s0, 0(a0)		# Carrega o valor de s0 em s0
+	lw  	s0, 0(a0)		# Carrega o valor de a0 em s0
 	beq	s0, t1, carregabombas	# Se o valor lido na matriz é igual a 9, será calculado o valor das casas ao redor da bomba na função carregabombas
 	addi	a0, a0, 4		# Acrescenta 4 no endereço da matriz para acessar o próximo número
 	addi	t0, t0, 1		# Acrescenta 1 no contador primário
@@ -556,7 +556,7 @@ imprimefirst:
 	# Função que imprime os valores da matriz
 	imprime:
 		beq 	t0, a6, pensa			# Realiza a repetição da função conta em todos os indices da matriz
-		beq	t0, t1, pula			# Se o contador for igual a 8, pula para a função pula
+		beq	t0, t1, pula			# Se o contador for igual a 7, pula para a função pula
 	
 		lw  	a0, 0(s0)			# Carrega o valor da matriz
 		beq	a0, t2, arruma			# Se o valor for igual a -1, pula para a função arruma
